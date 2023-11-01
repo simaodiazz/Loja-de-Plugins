@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --navbar-menu-item-a-hover: rgb(0, 183, 255);
+}
+
+.navbar-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-title {
+    margin-left: 30px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.navbar-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* Margin para deixar o titulo e os botões alinhados */
+.navbar-menu-item {
+    margin-top: 12px;
+}
+
+.navbar-menu-item a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    transition: ease-in-out color 0.3s;
+}
+
+.navbar-menu-item a:hover {
+    color: var(--navbar-menu-item-a-hover);
+}
